@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coral Store | Products</title>
+    <link
+      rel="stylesheet"
+      href="https://coral-ui.vercel.app/Components/coral-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./../css/productpage.css" />
+  </head>
+  <body>
+    <nav class="nav-bar shadow-box">
+      <div class="nav-section">
+        <div class="nav-logo nav-section-items">
+          <a class="link-no-style" href="/index.html">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1598103586054-c4b456cbddc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+              alt="Logo"
+              width="60"
+              height="60"
+            />
+          </a>
+        </div>
+
+        <div class="nav-logo-title nav-section-items">
+          <a class="link-no-style" href="/index.html">Home</a>
+        </div>
+
+        <ul class="nav-bar-links list-style-none nav-section-items">
+          <li class="list-inline-item">
+            <a class="link-no-style" href="/pages/product.html">Products</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-section">
+        <label class="search-bar nav-section-item-width50pc">
+          <span class="search-bar-btn" type="submit"
+            ><i class="fa fa-search"> </i
+          ></span>
+          <input
+            class="search-bar-input"
+            type="text"
+            placeholder="Type to search"
+            name="search"
+          />
+        </label>
+
+        <ul class="nav-icons list-style-none nav-section-item-width50pc">
+          <li class="list-inline-item hide-profile-mobile">
+            <a class="nav-icon-link link-no-style">
+              <span class="nav-icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="nav-icon-text"> Login </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="nav-icon-link link-no-style">
+              <span class="nav-icon">
+                <i class="fas fa-heart"></i>
+              </span>
+              <span class="nav-icon-text"> Wishlist </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="nav-icon-link link-no-style">
+              <span class="nav-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+              <span class="nav-icon-text"> Cart </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="grid-30-70 main-container-gutter">
+      <div class="filter-container padding-s flex-column gap-s">
+        <section class="filter-section filter-title flex-space-between">
+          <h3 class="text-s filter-option">FILTERS</h3>
+          <span class="link-text text-xs clear-option">Clear All</span>
+        </section>
+        <div class="filter-wrapper flex-column gap-s">
+          <section class="filter-section">
+            <div class="prices flex-space-between">
+              <h3>Price</h3>
+              <span>10</span>
+              <span>20</span>
+              <span>30</span>
+              <span>40</span>
+              <span>50</span>
+              <span>60</span>
+            </div>
+            <div class="slider-container">
+              <input type="range" name="" class="slider" min="0" max="100" />
+            </div>
+          </section>
+          <section class="filter-section">
+            <ul class="filter-input-wrapper flex-column gap-xs">
+              <h3>Brand</h3>
+              <li>
+                <label for="checkbox-accessories" class="flex--row gap-xs">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-accessories"
+                    class="input-checkbox"
+                  />
+                  Staedtler
+                </label>
+              </li>
+              <li>
+                <label for="checkbox-books" class="flex--row gap-xs">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-books"
+                    class="input-checkbox"
+                  />
+                  La Pajarita
+                </label>
+              </li>
+              <li>
+                <label for="checkbox-clothing" class="flex--row gap-xs">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-clothing"
+                    class="input-checkbox"
+                  />
+                  Fevicryl
+                </label>
+              </li>
+              <li>
+                <label for="checkbox-living" class="flex--row gap-xs">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-living"
+                    class="input-checkbox"
+                  />
+                  BRUSTRO
+                </label>
+              </li>
+              <li>
+                <label for="checkbox-stationery" class="flex--row gap-xs">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-stationery"
+                    class="input-checkbox"
+                  />
+                  Faber-Castell
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section class="filter-section">
+            <ul class="filter-input-wrapper flex-column gap-xs">
+              <h3>RATING</h3>
+              <li>
+                <label for="input-4star" class="flex--row gap-xs">
+                  <input
+                    type="radio"
+                    class="input-radio element-round"
+                    id="input-4star"
+                    name="radio-item"
+                  />
+
+                  <span>4 Stars & above</span>
+                </label>
+              </li>
+
+              <li>
+                <label for="input-3star" class="flex--row gap-xs">
+                  <input
+                    type="radio"
+                    class="input-radio element-round"
+                    id="input-3star"
+                    name="radio-item"
+                  />
+                  <span>3 Stars & above</span>
+                </label>
+              </li>
+              <li>
+                <label for="input-2star" class="flex--row gap-xs">
+                  <input
+                    type="radio"
+                    class="input-radio element-round"
+                    id="input-2star"
+                    name="radio-item"
+                  />
+                  <span>2 Stars & above</span>
+                </label>
+              </li>
+              <li>
+                <label for="input-1star" class="flex--row gap-xs">
+                  <input
+                    type="radio"
+                    class="input-radio element-round"
+                    id="input-1star"
+                    name="radio-item"
+                  />
+                  <span>1 Stars & above</span>
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section class="filter-section">
+            <ul class="filter-input-wrapper flex-column gap-xs">
+              <h3>SORT</h3>
+              <li>
+                <label for="price-L2H" class="flex--row gap-xs">
+                  <input
+                    type="radio"
+                    class="input-radio element-round"
+                    id="price-L2H"
+                    name="radio-item"
+                  />
+
+                  <span>Price - Low to High</span>
+                </label>
+              </li>
+
+              <li>
+                <label for="price-H2L" class="flex--row gap-xs">
+                  <input
+                    type="radio"
+                    class="input-radio element-round"
+                    id="price-H2L"
+                    name="radio-item"
+                  />
+                  <span>Price - Low to High</span>
+                </label>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="grid-product-layout">
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645375445587/38TbW2A5c.jpeg?auto=compress"
+            alt=""
+          />
+          <div class="bgde-lg pink"></div>
+          <div class="card-info">
+            <h3>BRUSTRO Artists’ Watercolour Tubes</h3>
+            <h4>Set of 12 & 24 premium watercolour 12 ml tubes</h4>
+            <div class="card-details">
+              <button class="btn btn-icn-secondary secondary btn-card">
+                <i class="fas fa-heart"></i>
+                Move to Wishlist
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-solid-primary primary btn-card">
+            Shop Now
+          </button>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645375445587/38TbW2A5c.jpeg?auto=compress"
+            alt=""
+          />
+          <div class="bgde-lg pink"></div>
+          <div class="card-info">
+            <h3>BRUSTRO Artists’ Watercolour Tubes</h3>
+            <h4>Set of 12 & 24 premium watercolour 12 ml tubes</h4>
+            <div class="card-details">
+              <button class="btn btn-icn-secondary secondary btn-card">
+                <i class="fas fa-heart"></i>
+                Move to Wishlist
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-solid-primary primary btn-card">
+            Shop Now
+          </button>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645375445587/38TbW2A5c.jpeg?auto=compress"
+            alt=""
+          />
+          <div class="bgde-lg pink"></div>
+          <div class="card-info">
+            <h3>BRUSTRO Artists’ Watercolour Tubes</h3>
+            <h4>Set of 12 & 24 premium watercolour 12 ml tubes</h4>
+            <div class="card-details">
+              <button class="btn btn-icn-secondary secondary btn-card">
+                <i class="fas fa-heart"></i>
+                Move to Wishlist
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-solid-primary primary btn-card">
+            Shop Now
+          </button>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645375445587/38TbW2A5c.jpeg?auto=compress"
+            alt=""
+          />
+          <div class="bgde-lg pink"></div>
+          <div class="card-info">
+            <h3>BRUSTRO Artists’ Watercolour Tubes</h3>
+            <h4>Set of 12 & 24 premium watercolour 12 ml tubes</h4>
+            <div class="card-details">
+              <button class="btn btn-icn-secondary secondary btn-card">
+                <i class="fas fa-heart"></i>
+                Move to Wishlist
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-solid-primary primary btn-card">
+            Shop Now
+          </button>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645375445587/38TbW2A5c.jpeg?auto=compress"
+            alt=""
+          />
+          <div class="bgde-lg pink"></div>
+          <div class="card-info">
+            <h3>BRUSTRO Artists’ Watercolour Tubes</h3>
+            <h4>Set of 12 & 24 premium watercolour 12 ml tubes</h4>
+            <div class="card-details">
+              <button class="btn btn-icn-secondary secondary btn-card">
+                <i class="fas fa-heart"></i>
+                Move to Wishlist
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-solid-primary primary btn-card">
+            Shop Now
+          </button>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645375445587/38TbW2A5c.jpeg?auto=compress"
+            alt=""
+          />
+          <div class="bgde-lg pink"></div>
+          <div class="card-info">
+            <h3>BRUSTRO Artists’ Watercolour Tubes</h3>
+            <h4>Set of 12 & 24 premium watercolour 12 ml tubes</h4>
+            <div class="card-details">
+              <button class="btn btn-icn-secondary secondary btn-card">
+                <i class="fas fa-heart"></i>
+                Move to Wishlist
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-solid-primary primary btn-card">
+            Shop Now
+          </button>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645375445587/38TbW2A5c.jpeg?auto=compress"
+            alt=""
+          />
+          <div class="bgde-lg pink"></div>
+          <div class="card-info">
+            <h3>BRUSTRO Artists’ Watercolour Tubes</h3>
+            <h4>Set of 12 & 24 premium watercolour 12 ml tubes</h4>
+            <div class="card-details">
+              <button class="btn btn-icn-secondary secondary btn-card">
+                <i class="fas fa-heart"></i>
+                Move to Wishlist
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-solid-primary primary btn-card">
+            Shop Now
+          </button>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645375445587/38TbW2A5c.jpeg?auto=compress"
+            alt=""
+          />
+          <div class="bgde-lg pink"></div>
+          <div class="card-info">
+            <h3>BRUSTRO Artists’ Watercolour Tubes</h3>
+            <h4>Set of 12 & 24 premium watercolour 12 ml tubes</h4>
+            <div class="card-details">
+              <button class="btn btn-icn-secondary secondary btn-card">
+                <i class="fas fa-heart"></i>
+                Move to Wishlist
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-solid-primary primary btn-card">
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <p>© | 2022 | <span class="footer-txt"> Coral Store</span></p>
+      <p class="footer-txt">Coral Store by Megha Pathak</p>
+
+      <ul class="footer-list">
+        <li>
+          <a class="links" href="https://github.com/Megha-Pathak"
+            ><i class="fab fa-2x fa-github"></i
+          ></a>
+        </li>
+
+        <li>
+          <a class="links" href="https://twitter.com/Megha_Pathak_"
+            ><i class="fab fa-2x fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a class="links" href="https://www.linkedin.com/in/megha--pathak/"
+            ><i class="fab fa-2x fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
