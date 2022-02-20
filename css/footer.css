@@ -1,0 +1,32 @@
+
+.main-footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--white-color);
+	padding: 2rem 1rem 2rem;
+	border-radius: 1rem 1rem 0 0;
+	margin: 4rem 0 0;
+	background-color: var(--primary-color);
+  }
+  
+  .footer-list {
+	display: flex;
+	gap: 1rem;
+  }
+  
+  .footer-txt {
+	color: var(--white-color);
+  }
+  
+  .pink-txt:hover {
+	cursor: pointer;
+	text-decoration: underline;
+  }
+  
+  .footer-list > li {
+	font-size: small;
+  }
+  
+  .footer-list a {
+	color: #000;
+  }
