@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coral Store | Cart</title>
+    <title>Coral Store | Signup</title>
     <link
       rel="stylesheet"
       href="https://coral-ui.vercel.app/Components/coral-ui.css"
@@ -17,6 +17,8 @@
     />
 
     <link rel="stylesheet" href="./../css/footer.css" />
+    <link rel="stylesheet" href="./../css/form.css" />
+    <link rel="stylesheet" href="./../css/home-layout.css" />
   </head>
   <body>
     <nav class="nav-bar shadow-box">
@@ -75,7 +77,7 @@
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="nav-icon-link link-no-style">
+            <a class="nav-icon-link link-no-style" href="cart.html">
               <span class="nav-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
@@ -85,91 +87,51 @@
         </ul>
       </div>
     </nav>
-    <h2 class="center-txt">Checkout</h2>
-    <p class="center-txt">You have (2) Items in your cart.</p>
-    <div class="grid-2-col">
-      <div class="row">
-        <div class="card-horizontal-cart">
-          <div class="card-horizontal">
-            <img
-              class="card-horizontal-img"
-              src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645375445587/38TbW2A5c.jpeg?auto=compress"
-              alt="Colors"
+    <div
+      class="form-page-container flex--col flex--align-center flex--justfiy-center"
+    >
+      <form action="" class="form-container" novalidate>
+        <h2 class="padding-s text-center">Sign Up</h2>
+        <div class="flex--col gap-s">
+          <div>
+            <input
+              type="email"
+              class="input-txt"
+              id="email-input"
+              placeholder="Enter Email"
+              required
             />
-            <div class="card-info">
-              <h3>BRUSTRO Artists’ Watercolour Tubes</h3>
-              <small>Set of 12 & 24 premium watercolour 12 ml tubes</small>
-              <div class="card-details-horizontal">
-                <div class="card-quant">
-                  <button class="floating-act badge-close flt-tri">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                  <p>2</p>
-                  <button class="floating-act badge-close flt-tri">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                </div>
-                <p>Rs. 895</p>
-              </div>
-            </div>
           </div>
-          <div class="atn-btns">
-            <button class="btn btn-solid-primary primary btn-card">
-              <i class="fas fa-shopping-cart"></i>
-              Remove from Cart
-            </button>
-            <button class="btn btn-icon-secondary secondary btn-card">
-              <i class="fas fa-heart"></i>
-              Move to Wishlist
-            </button>
-          </div>
-        </div>
-        <div class="card-horizontal-cart">
-          <div class="card-horizontal">
-            <img
-              class="card-horizontal-img"
-              src="https://cdn.hashnode.com/res/hashnode/image/upload/v1645375445587/38TbW2A5c.jpeg?auto=compress"
-              alt="Colors"
+
+          <div>
+            <input
+              type="password"
+              class="input-txt"
+              id="email-password"
+              pattern="^.{8,}$"
+              required
+              placeholder="Enter Password"
             />
-            <div class="card-info">
-              <h3>BRUSTRO Artists’ Watercolour Tubes</h3>
-              <small>Set of 12 & 24 premium watercolour 12 ml tubes</small>
-              <div class="card-details-horizontal">
-                <div class="card-quant">
-                  <button class="floating-act badge-close flt-tri">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                  <p>2</p>
-                  <button class="floating-act badge-close flt-tri">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                </div>
-                <p>Rs. 895</p>
-              </div>
-            </div>
           </div>
-          <div class="atn-btns">
-            <button class="btn btn-solid-primary primary btn-card">
-              <i class="fas fa-shopping-cart"></i>
-              Remove from Cart
-            </button>
-            <button class="btn btn-icon-secondary secondary btn-card">
-              <i class="fas fa-heart"></i>
-              Move to Wishlist
-            </button>
+          <div class="form-subtext flex-space-between">
+            <label for="remember-me" class="flex-row gap-xs pointer">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="remember-me"
+                class="input-checkbox"
+              />
+              I accept all the terms and conditions.
+            </label>
           </div>
+          <button class="btn btn-solid-primary primary btn-card">
+            Sign up
+          </button>
+          <a href="./login.html" class="btn-outline-primary"
+            >Already have an account? <i class="fas fa-chevron-right"></i
+          ></a>
         </div>
-      </div>
-      <div class="grid-sample-child">
-        <div class="card">
-          <div class="card-info">
-            <h3>Total</h3>
-            <small>Delivery fee: 100</small>
-            <p class="card-info-para">Total: 1890</p>
-            <button class="btn btn-solid-primary primary btn-card">Pay</button>
-          </div>
-        </div>
-      </div>
+      </form>
     </div>
     <footer class="main-footer">
       <p>© | 2022 | <span class="footer-txt"> Coral Store</span></p>
