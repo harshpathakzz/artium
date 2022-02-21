@@ -96,7 +96,7 @@
     width: 100%;
 }
 
-.section__head {
+.products_available {
     position: relative;
     z-index: 1;
 	background:  var(--primary-color); 
