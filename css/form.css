@@ -6,7 +6,7 @@
 	min-width: 50vmin;
 	margin: 2rem;
 	flex: 1 0 auto;
-    background-color: #fff;
+    background-color: (--white-color);
     padding: 1rem;
     border-radius: 0.4rem;
     box-shadow: var(--secondary-box-shadow);
