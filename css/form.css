@@ -1,0 +1,85 @@
+.form-page-container {
+	height: fit-content;
+}
+
+.form-page-container .form-container {
+	min-width: 50vmin;
+	margin: 2rem;
+	flex: 1 0 auto;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    box-shadow: var(--secondary-box-shadow);
+}
+
+.form-container .input {
+	width: 100%;
+}
+
+@media (max-width: 400px) {
+	.form-subtext.flex-space-between {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+}
+.form-error-msg{
+    color: var(--dk-pink);
+}
+
+.input-checkbox {
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 2px solid var(--primary-dark);
+}
+
+
+.input-checkbox::before {
+	width: 0.7rem;
+	height: 0.7rem;
+}
+
+.btn-outline-primary{
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.flex--row {
+    display: flex;
+}
+
+.flex--col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
+.flex--align-start {
+    align-items: flex-start;
+}
+
+.flex--align-end {
+    align-items: flex-end;
+}
+
+.flex--align-center {
+    align-items: center;
+}
+
+.flex--justfiy-center {
+    justify-content: center;
+}
+
+.flex--justify-between {
+    justify-content: space-between;
+}
+
+.flex--justify-start {
+    justify-content: flex-start;
+}
+
+.flex--justfiy-end {
+    justify-content: flex-end;
+}
