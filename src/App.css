@@ -1,0 +1,67 @@
+/* Font style Lato  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+@import url("https://coralui.netlify.app/components/coral-ui.css");
+@import url("https://coralui.netlify.app/components/reset.css");
+
+/* Theme Colors  */
+:root {
+
+  --color-foreground: #111111;
+  --color-accents-one: #292929;
+  --color-accents-two: #464646;
+  --color-accents-three: #646464;
+  --color-accents-four: #818181;
+  --color-accents-five: #9e9e9e;
+  --color-accents-six: #dcdcdc;
+  --color-background: #fafafa;
+
+  --rose-primary-700: #881337;
+  --rose-primary-600: #9f1239;
+  --rose-primary-500: #be123c;
+  --rose-primary-400: #e11d48;
+  --rose-primary-300: #f43f5e;
+  --rose-primary-200: #fda4af;
+  --rose-primary-100: #fecdd3;
+
+  --rose-seconday-700: #991b1b;
+  --rose-seconday-600: #b91c1c;
+  --rose-seconday-500: #dc2626;
+  --rose-seconday-400: #ef4444;
+  --rose-seconday-300: #f87171;
+  --rose-seconday-200: #fca5a5;
+  --rose-seconday-100: #fecaca;
+  
+  --pink: #831843;
+
+
+  --footer-bg: #222222;
+
+
+  --12-px: 0.75rem;
+  --14-px: 0.875rem;
+  --16-px: 1rem;
+  --22-px: 1.375rem;
+  --24-px: 1.5rem;
+  --28-px: 1.75rem;
+  --32-px: 2rem;
+  --40-px: 2.5rem;
+  --42-px: 2.625rem;
+  --48-px: 3rem;
+  --56-px: 3.5rem;
+  --60-px: 3.75rem;
+
+
+
+  --thin: 100;
+  --extra-light: 200;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+  --black: 900;
+
+
+  --box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
