@@ -89,6 +89,7 @@
 .navbar-icon {
   display: unset;
   font-size: var(--28-px);
+  color: var(--rose-primary-500); 
 }
 
 .dropdown-content {
@@ -174,6 +175,7 @@
   .navbar-icon {
     padding: unset;
     border: unset;
-    border-radius: 0;
+    border-radius: 0; 
+    color: var(--rose-primary-500); 
   }
 }
