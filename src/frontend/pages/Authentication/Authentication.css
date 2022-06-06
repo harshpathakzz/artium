@@ -21,7 +21,7 @@
 .form {
     padding: 2.5rem 2rem;
     flex-basis: 20rem;
-    background-color: #fefefe;
+    background-color: var(--rose-primary-100);
     border: none;
     box-shadow: #63636333 0px 2px 8px 0px;
 }
