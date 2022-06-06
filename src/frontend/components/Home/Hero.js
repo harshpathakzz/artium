@@ -8,19 +8,20 @@ const Hero = () => {
       <div className="hero-info">
         <div className="hero-title">
           <h1 className="h1-60">
-            Delivering <span className="hl-green">Plants</span>
+            Shop with <span className="hl-rose">Artium</span>
           </h1>
           <h1 className="h1-60">
-            Delivering <span className="hl-green">Delight!</span>
+            Be your own <span className="hl-rose">Artist!</span>
           </h1>
         </div>
         <div className="hero-subtitle">
           <p>
-            Shop your favorite plants in your favorable factor, air-purifiers,
-            pet-friendly, succulents, herbs, and more...
+            Artium is a registered brand of Creativehands, boasts of becoming
+            people's choice by providing the highest quality products at
+            feasible rates for artists.
           </p>
         </div>
-        <button className="btn btn-link btn-teal">
+        <button className="btn btn-link btn-pink">
           <Link className="hero-link" to="/products">
             Shop Now
             <span className="material-icons"> chevron_right </span>
