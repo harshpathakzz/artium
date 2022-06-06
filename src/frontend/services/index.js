@@ -4,3 +4,6 @@ export { getCartService } from "./getCartService";
 export { addProductToCartService } from "./addProductToCartService";
 export { removeProductFromCartService } from "./removeProductFromCartService";
 export { updateQuantityService } from "./updateQuantityService";
+export { getWishlistService } from "./getWishlistService";
+export { moveProductToWishlistService } from "./moveProductToWishlistService";
+export { removeProductFromWishlistService } from "./removeProductFromWishlistService";
