@@ -5,6 +5,7 @@ import { HomePage } from "../pages/Homepage/Homepage";
 import { SignInPage } from "../pages/Authentication/SignInPage";
 import { SignUpPage } from "../pages/Authentication/SignUpPage";
 import { PrivateRoute } from "../components/PrivateRoute/PrivateRoute";
+import { ProductsPage } from "../pages/ProductsPage/ProductsPage";
 
 const Router = () => {
   const {
@@ -14,6 +15,7 @@ const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/products" element={<ProductsPage />} />
       <Route path="/cart" element={<PrivateRoute></PrivateRoute>} />
       {!status && (
         <>
