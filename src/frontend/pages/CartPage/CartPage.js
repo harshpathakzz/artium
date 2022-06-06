@@ -1,5 +1,5 @@
 import React from "react";
-import CartProductCard from "../../components/CartProductCard/CartProductCard";
+import { CartProductCard } from "../../components/CartProductCard/CartProductCard";
 import { CartSummary } from "../../components/CartSummary/CartSummary";
 import { useCart } from "../../contexts/cart-context";
 import "./CartPage.css";

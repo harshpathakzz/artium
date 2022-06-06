@@ -88,4 +88,4 @@ const CartProductCard = ({ product }) => {
   );
 };
 
-export default { CartProductCard };
+export { CartProductCard };
