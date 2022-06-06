@@ -1,0 +1,53 @@
+
+.input-feild {
+    accent-color: var(--pink);
+}
+
+.form-wrapper {
+    margin-top: 7.5rem;
+    scroll-margin-top: 7.5rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-img-section {
+    margin-top: -5rem;
+    width: 40rem;
+    position: relative;
+}
+
+.form {
+    padding: 2.5rem 2rem;
+    flex-basis: 20rem;
+    background-color: #fefefe;
+    border: none;
+    box-shadow: #63636333 0px 2px 8px 0px;
+}
+
+.auth-link-message {
+    font-size: var(--14-px);
+}
+
+.auth-link {
+    border-bottom: 1px solid;
+    color: var(--pink);
+}
+
+input[type="email"]:valid {
+    background-color: transparent;
+}
+
+.btn-auth {
+    max-width: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .form-img {
+       display: none;
+    }
+}
+
+
