@@ -70,3 +70,7 @@
     min-width: 100%;
   }
 }
+
+.favorite-icon {
+  color: red;
+}
