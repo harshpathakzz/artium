@@ -26,14 +26,16 @@ const WishlistCard = ({ product }) => {
 
   return (
     <div className="card card-horizontal wishlist-card-horizontal">
-      <div className="card-media"></div>
+      <div className="card-media">
+        <img className="img-rsp" src={images} alt="colors" />
+      </div>
       <div className="card-info">
         <div className="card-primary">
           <h2 className="card-title wishlist-card-title">{name}</h2>
           <div className="card-price">
             <h4 className="card-price-discounted">₹{discountedPrice}</h4>
             <small className="card-price-original">₹{originalPrice}</small>
-            <span className="card-discount">{discount}% Off</span>
+            <span className="card-discount">Rs {discount} Off</span>
           </div>
           <div className="wishlist-card-desc">{description}</div>
         </div>
