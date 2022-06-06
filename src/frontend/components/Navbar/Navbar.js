@@ -33,7 +33,7 @@ function Navbar() {
             <NavLink to="/">
               <img
                 className="brand-logo"
-                src="/assets/Artium512.png"
+                src="/assets/Artium192.png"
                 alt="Artium"
               />
             </NavLink>
