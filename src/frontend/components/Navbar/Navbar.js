@@ -1,13 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { AUTH_TOKEN } from "../../constants/authConstants";
-import { useAuth, useNavbar } from "../../contexts";
 import { ResponsiveNavbar } from "../ResponsiveNavbar/ResponsiveNavbar";
+import { useAuth } from "../../contexts";
+import { useCart } from "../../contexts/cart-context";
+import { useNavbar } from "../../contexts";
+import { useWishlist } from "../../contexts/wishlist-context";
 import "./Navbar.css";
 
 function Navbar() {
   const { showNavbar, toggleNavbar } = useNavbar();
   const { auth, setAuth } = useAuth();
+  const { wishlist } = useWishlist();
+  const {
+    cartSummary: { cartTotalProducts },
+  } = useCart();
 
   const signOutHandler = () => {
     localStorage.removeItem(AUTH_TOKEN);
@@ -74,14 +81,23 @@ function Navbar() {
                   <span className="material-icons navbar-icon">
                     shopping_cart
                   </span>
-                  5
+                  {cartTotalProducts !== 0 && (
+                    <span className="badge-content badge-small badge-color badge-right ">
+                      {cartTotalProducts}
+                    </span>
+                  )}
                 </span>
               </NavLink>
             </span>
             <span className="navbar-action">
               <NavLink to="/wishlist">
                 <span className="badge badge-icon">
-                  <span className="material-icons navbar-icon"> favorite</span>5
+                  <span className="material-icons navbar-icon">favorite</span>
+                  {wishlist.length !== 0 && (
+                    <span className="badge-content badge-small badge-color badge-right ">
+                      {wishlist.length}
+                    </span>
+                  )}
                 </span>
               </NavLink>
             </span>
