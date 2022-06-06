@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts";
 import { signUpService } from "../../services";
-import { AUTH_TOKEN } from "./../../constants/authConstants";
+import { AUTH_TOKEN } from "../../constants/authConstants";
 
 function SignUpPage() {
   const [user, setUser] = useState({
