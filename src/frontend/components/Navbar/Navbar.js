@@ -79,33 +79,33 @@ function Navbar() {
               </NavLink>
             </span>
             <span className="navbar-action">
-              <span className="material-icons navbar-icon">perm_identity</span>
-              <ul className="dropdown-content list-simple list-cursor-pointer list-style-none">
-                <li>
-                  {auth.status ? (
-                    <span className="navbar-link" onClick={signOutHandler}>
-                      Sign Out
-                    </span>
-                  ) : (
-                    <NavLink
-                      className={({ isActive }) =>
-                        isActive ? "navbar-link-active" : "navbar-link"
-                      }
-                      to="/signin"
-                    >
-                      Sign In
-                    </NavLink>
-                  )}
-                </li>
-                <li>
+              <NavLink to="/wishlist">
+                <span className="badge badge-icon">
+                  <span className="material-icons navbar-icon"> favorite</span>5
+                </span>
+              </NavLink>
+            </span>
+            <span className="navbar-action">
+              <span className="badge badge-icon">
+                <span className="material-icons navbar-icon">
+                  {" "}
+                  perm_identity
+                </span>
+                {auth.status ? (
+                  <span className="navbar-link" onClick={signOutHandler}>
+                    Sign Out
+                  </span>
+                ) : (
                   <NavLink
                     className={({ isActive }) =>
                       isActive ? "navbar-link-active" : "navbar-link"
                     }
-                    to="/wishlist"
-                  ></NavLink>
-                </li>
-              </ul>
+                    to="/signin"
+                  >
+                    Sign In
+                  </NavLink>
+                )}
+              </span>
             </span>
           </section>
         </nav>
