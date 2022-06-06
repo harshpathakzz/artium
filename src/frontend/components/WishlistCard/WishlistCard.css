@@ -8,6 +8,7 @@
 }
 
 .card-title {
+  font-size:  var(--18-px);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;

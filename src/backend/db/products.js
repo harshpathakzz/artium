@@ -1,30 +1,113 @@
 import { v4 as uuid } from "uuid";
-
-/**
- * Product Database can be added here.
- * You can add products of your wish with different attributes
- * */
-
 export const products = [
   {
     _id: uuid(),
-    title: "You Can WIN",
-    author: "Shiv Khera",
-    price: "5000",
-    categoryName: "non-fiction",
+    name: "Water Colours By Primo",
+    originalPrice: 600,
+    discount: 150,
+    discountedPrice: 450,
+    description: "Transparent, bright and evocative.",
+    rating: 3,
+    categories: ["24"],
+    isBestseller: true,
+    isTrending: false,
+    images:
+      "https://cdn.shopify.com/s/files/1/0260/9384/6583/products/Water_colours_art_paper_PRIMO_ITALY_scooboo.jpg4_540x.jpg?v=1632566697",
+    inStock: 10,
   },
   {
     _id: uuid(),
-    title: "You are Winner",
-    author: "Junaid Qureshi",
-    price: "3000",
-    categoryName: "horror",
+    name: "BRUSTRO Artists Acrylic Colours",
+    originalPrice: 600,
+    discount: 200,
+    discountedPrice: 400,
+    description:
+      "These Acrylic Paints are perfect to create textured effects, brush marks and palette knife impressions.",
+    rating: 4.5,
+    categories: ["12"],
+    isBestseller: true,
+    isTrending: false,
+    images:
+      "https://cdn.shopify.com/s/files/1/0260/9384/6583/products/brustro-artists-acrylic-colours-366926_540x.jpg?v=1641550126",
+    inStock: 10,
   },
   {
     _id: uuid(),
-    title: "Think and Grow Rich",
-    author: "Shiv Khera",
-    price: "1000",
-    categoryName: "fiction",
+    name: "SAKURA PIGMA BRUSH PEN SET OF 24 ASSORTED COLOURS",
+    originalPrice: 600,
+    discount: 100,
+    discountedPrice: 500,
+    description:
+      "Brush strokes give beautiful color effects ideal for calligraphy, graphic art, scrapbooks, freehand art etc.",
+    rating: 4,
+    categories: ["24"],
+    isBestseller: false,
+    isTrending: false,
+    images:
+      "https://cdn.shopify.com/s/files/1/0260/9384/6583/products/sakura-pigma-brush-pen-calligraphy-br-8-original-scooboo-ball-pen-tombow-india-stationery-art-craft-online_540x.jpg?v=1622439034",
+    inStock: 10,
+  },
+  {
+    _id: uuid(),
+    name: "Mungyo Gallery Artist Soft Oil Pastel",
+    originalPrice: 935,
+    discount: 35,
+    discountedPrice: 900,
+    description: "Features high-end oil pastels for professional artists",
+    rating: 5,
+    categories: ["24"],
+    isBestseller: true,
+    isTrending: false,
+    images:
+      "https://cdn.shopify.com/s/files/1/0260/9384/6583/products/mungyo-gallery-artist-soft-oil-pastel-24-shadesoil-pastelsmungyoscooboo-mopv-248804819124023-173844_540x.jpg?v=1647441659",
+    inStock: 10,
+  },
+  {
+    _id: uuid(),
+    name: "CAMEL OIL PASTELS",
+    originalPrice: 600,
+    discount: 100,
+    discountedPrice: 500,
+    description:
+      "Camel oil pastels are smoother to use and richer, deeper in colour.",
+    rating: 4,
+    categories: ["24"],
+    isBestseller: false,
+    isTrending: false,
+    images:
+      "https://cdn.shopify.com/s/files/1/0260/9384/6583/products/camel-oil-pastels-490424_540x.jpg?v=1641550180",
+    inStock: 10,
+  },
+  {
+    _id: uuid(),
+    name: "Chalk Paint Marker",
+    originalPrice: 100,
+    discount: 20,
+    discountedPrice: 80,
+    description:
+      "Water based marker with rounded tip of 2,5 mm. Odourless with high pigmentation. For every kind of surfaces and decorations.",
+    rating: 2,
+    categories: ["12"],
+    isBestseller: false,
+    isTrending: false,
+    images:
+      "https://cdn.shopify.com/s/files/1/0260/9384/6583/products/chalk-paint-marker-122044_540x.jpg?v=1641550249",
+    inStock: 10,
+  },
+  {
+    _id: uuid(),
+    name: "SAKURA PIGMA BRUSH PEN SET OF 12 ASSORTED COLOURS",
+    originalPrice: 600,
+    discount: 100,
+    discountedPrice: 500,
+    description:
+      "Brush strokes give beautiful color effects ideal for calligraphy, graphic art, scrapbooks, freehand art etc.",
+    rating: 3,
+    categories: ["12"],
+    isBestseller: false,
+    isTrending: false,
+    images:
+      "https://cdn.shopify.com/s/files/1/0260/9384/6583/products/sakura-pigma-brush-pen-calligraphy-br-8-original-scooboo-ball-pen-tombow-india-stationery-art-craft-online_540x.jpg?v=1622439034",
+    inStock: 10,
   },
 ];

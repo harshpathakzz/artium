@@ -35,7 +35,7 @@ const ProductCard = ({ product }) => {
           : "card card-vertical"
       }
     >
-      {/* <img src={images[0]} alt={name} className="card-media" /> */}
+      <img src={images} alt={name} className="card-media" />
       <div className="card-primary">
         <h2 className="card-title">{name}</h2>
       </div>
@@ -43,7 +43,7 @@ const ProductCard = ({ product }) => {
       <div className="card-price">
         <h4 className="card-price-discounted">₹{discountedPrice}</h4>
         <small className="card-price-original">₹{originalPrice}</small>
-        <span className="card-discount">{discount}% Off</span>
+        <span className="card-discount">Rs {discount} Off</span>
       </div>
       <div className="card-actions">
         <div className="card-action-buttons">
@@ -88,9 +88,6 @@ const ProductCard = ({ product }) => {
               <span className="material-icons"> favorite_border </span>
             </button>
           )}
-          <button className="card-action-icon">
-            <span className="material-icons"> share </span>
-          </button>
         </div>
       </div>
       {isBestseller && (
