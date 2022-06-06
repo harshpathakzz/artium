@@ -65,3 +65,64 @@
 
   --box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
+.logo {
+  width: 7.5rem;
+}
+
+
+.h1-48 {
+  font-size: var(--48-px);
+}
+
+.h1-60 {
+  font-size: var(--60-px);
+}
+
+.h2 {
+  font-size: var(--32-px);
+}
+
+.h3 {
+  font-size: var(--28-px);
+}
+
+.p {
+  font-size: var(--14-px);
+}
+
+
+.app {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.hl-rose {
+  color: var(--rose-primary-700);
+}
+
+
+.btn {
+  max-width: max-content;
+}
+
+.btn-disabled {
+  cursor: not-allowed;
+}
+
+.btn-pink {
+  background-color: var(--pink);
+  color: var(--color-background);
+}
+
+.btn-pink-secondary {
+  color: var(--pink);
+  border: 1px solid var(--pink);
+}
