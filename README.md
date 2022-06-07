@@ -1,12 +1,36 @@
-# coral-store
+<p align="center">
+    <img src="public/assets/homeImageOne.png" width=100 alt="Artium">
+    <br>
+    <br>
+ <a href="https://app.netlify.com/sites/coralui/deploys"><img src="https://api.netlify.com/api/v1/badges/c5149ced-8138-493d-9ec2-ae72f4cde641/deploy-status" alt="Netlify Status"></a>
 
-Coral Store is an ecommerce for art stationery. 
+</p>
 
-## Screens currently present 
+Artium is a e-commerce app that enables you in having a seemless stationary and art supplies buying experience.
 
-  * [Home](https://coral-store.vercel.app/)
-  * [Product Listing](https://coral-store.vercel.app/pages/product.html)
-  * [Wish List](https://coral-store.vercel.app/pages/wishlist.html)
-  * [Cart Page](https://coral-store.vercel.app/pages/cart.html)
-  * [Login](https://coral-store.vercel.app/pages/login.html)
-  * [Sign Up](https://coral-store.vercel.app/pages/sign-up.html)
+## Technology Stack
+
+- React Js
+- [Coral UI](https://github.com/Megha-Pathak/Coral-UI)
+- Vercel
+- Mockbee (for backend)
+- Storyset (for Illustrations)
+
+## Installation
+
+Follow the [Installation guide](https://coralui.netlify.app/documentation/installation.html) to get up and going with this component library.
+
+## Features
+
+Artium currently have the following features.
+
+- Home Page
+- Product Listing Page
+- Filters
+- Cart Management
+- Wishlist Management
+- Authentication
+
+## Contact Author for Feedback
+
+![Twitter Follow](https://img.shields.io/twitter/follow/megha_pathak_?style=social)
