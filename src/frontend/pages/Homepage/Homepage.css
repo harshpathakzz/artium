@@ -14,11 +14,6 @@
     gap: 4rem;
   }
   
-  .plants-section {
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-  }
   
   .floating-img-div {
     width: 6rem;
@@ -39,6 +34,12 @@
     right: -5rem;
     top: -6rem;
   }
+
+  .secondary-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
   
   @media screen and (max-width: 1250px) {
     h1 {
@@ -49,13 +50,14 @@
       font-size: 2rem;
     }
   }
-  
+
   @media screen and (max-width: 850px) {
-    .plants-section {
+    .secondary-section {
       display: none;
     }
   }
   
+
   @media screen and (max-width: 580px) {
     .home-screen {
       padding: 0;
