@@ -8,7 +8,6 @@ export const products = [
     discountedPrice: 450,
     description: "Transparent, bright and evocative.",
     rating: 3,
-    categories: ["24"],
     isBestseller: true,
     isTrending: false,
     images:
@@ -24,7 +23,6 @@ export const products = [
     description:
       "These Acrylic Paints are perfect to create textured effects, brush marks and palette knife impressions.",
     rating: 4.5,
-    categories: ["12"],
     isBestseller: true,
     isTrending: false,
     images:
@@ -40,7 +38,6 @@ export const products = [
     description:
       "Brush strokes give beautiful color effects ideal for calligraphy, graphic art, scrapbooks, freehand art etc.",
     rating: 4,
-    categories: ["24"],
     isBestseller: false,
     isTrending: false,
     images:
@@ -55,7 +52,6 @@ export const products = [
     discountedPrice: 900,
     description: "Features high-end oil pastels for professional artists",
     rating: 5,
-    categories: ["24"],
     isBestseller: true,
     isTrending: false,
     images:
@@ -71,7 +67,6 @@ export const products = [
     description:
       "Camel oil pastels are smoother to use and richer, deeper in colour.",
     rating: 4,
-    categories: ["24"],
     isBestseller: false,
     isTrending: false,
     images:
@@ -87,7 +82,6 @@ export const products = [
     description:
       "Water based marker with rounded tip of 2,5 mm. Odourless with high pigmentation. For every kind of surfaces and decorations.",
     rating: 2,
-    categories: ["12"],
     isBestseller: false,
     isTrending: false,
     images:
@@ -103,7 +97,6 @@ export const products = [
     description:
       "Brush strokes give beautiful color effects ideal for calligraphy, graphic art, scrapbooks, freehand art etc.",
     rating: 3,
-    categories: ["12"],
     isBestseller: false,
     isTrending: false,
     images:
