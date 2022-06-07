@@ -1,18 +1,14 @@
-import { giveProductsInPriceRange } from "./giveProductsInPriceRange";
-import { giveProductsOfRating } from "./giveProductsOfRating";
-import { giveProductsSorted } from "./giveProductsSorted";
+import { priceRangeFilter } from "./priceRangeFilter";
+import { ratingFilter } from "./ratingFilter";
+import { sortingFilter } from "./sortingFilter";
 
 export const giveFinalProducts = (products, filters) => {
   const { minPrice, maxPrice, sortBy, rating } = filters;
-  const productsInPriceRange = giveProductsInPriceRange(
-    products,
-    minPrice,
-    maxPrice
-  );
+  const productsInPriceRange = priceRangeFilter(products, minPrice, maxPrice);
 
-  const productsSorted = giveProductsSorted(productsInPriceRange, sortBy);
+  const productsSorted = sortingFilter(productsInPriceRange, sortBy);
 
-  const productsOfRating = giveProductsOfRating(productsSorted, rating);
+  const productsOfRating = ratingFilter(productsSorted, rating);
 
   return productsOfRating;
 };
