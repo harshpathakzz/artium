@@ -2,8 +2,7 @@
     <img src="public/assets/homeImageOne.png" width=100 alt="Artium">
     <br>
     <br>
- <a href="https://app.netlify.com/sites/coralui/deploys"><img src="https://api.netlify.com/api/v1/badges/c5149ced-8138-493d-9ec2-ae72f4cde641/deploy-status" alt="Netlify Status"></a>
-
+ 
 </p>
 
 Artium is a e-commerce app that enables you in having a seemless stationary and art supplies buying experience.
