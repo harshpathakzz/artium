@@ -12,7 +12,7 @@ Artium is a e-commerce app that enables you in having a seemless stationary and 
 
 - React Js
 - [Coral UI](https://github.com/Megha-Pathak/Coral-UI)
-- Vercel
+- Netlify
 - Mockbee (for backend)
 - Storyset (for Illustrations)
 
