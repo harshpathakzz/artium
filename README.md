@@ -16,10 +16,6 @@ Artium is a e-commerce app that enables you in having a seemless stationary and 
 - Mockbee (for backend)
 - Storyset (for Illustrations)
 
-## Installation
-
-Follow the [Installation guide](https://coralui.netlify.app/documentation/installation.html) to get up and going with this component library.
-
 ## Features
 
 Artium currently have the following features.
