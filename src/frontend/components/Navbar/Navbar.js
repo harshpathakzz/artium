@@ -7,6 +7,7 @@ import { useCart } from "../../contexts/cart-context";
 import { useNavbar } from "../../contexts";
 import { useWishlist } from "../../contexts/wishlist-context";
 import "./Navbar.css";
+import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 
 function Navbar() {
   const { showNavbar, toggleNavbar } = useNavbar();
@@ -69,6 +70,7 @@ function Navbar() {
               </li>
             </ul>
           </section>
+          <ThemeToggle />
           <section className="navbar-actions">
             <span className="navbar-action">
               <NavLink to="/cart">
