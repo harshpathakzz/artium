@@ -70,11 +70,6 @@ function Navbar() {
             </ul>
           </section>
           <section className="navbar-actions">
-            <span className="navbar-action navbar-search">
-              <span className="material-icons navbar-icon navbar-search-icon">
-                search
-              </span>
-            </span>
             <span className="navbar-action">
               <NavLink to="/cart">
                 <span className="badge badge-icon">
