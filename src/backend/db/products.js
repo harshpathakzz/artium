@@ -3,9 +3,9 @@ export const products = [
   {
     _id: uuid(),
     name: "Water Colours By Primo",
-    originalPrice: 600,
+    originalPrice: 4600,
     discount: 150,
-    discountedPrice: 450,
+    discountedPrice: 4450,
     description: "Transparent, bright and evocative.",
     rating: 3,
     isBestseller: true,
@@ -17,9 +17,9 @@ export const products = [
   {
     _id: uuid(),
     name: "BRUSTRO Artists Acrylic Colours",
-    originalPrice: 600,
+    originalPrice: 5600,
     discount: 200,
-    discountedPrice: 400,
+    discountedPrice: 5400,
     description:
       "These Acrylic Paints are perfect to create textured effects, brush marks and palette knife impressions.",
     rating: 4.5,
@@ -32,9 +32,9 @@ export const products = [
   {
     _id: uuid(),
     name: "SAKURA PIGMA BRUSH PEN SET OF 24 ASSORTED COLOURS",
-    originalPrice: 600,
+    originalPrice: 4600,
     discount: 100,
-    discountedPrice: 500,
+    discountedPrice: 4500,
     description:
       "Brush strokes give beautiful color effects ideal for calligraphy, graphic art, scrapbooks, freehand art etc.",
     rating: 4,
@@ -47,9 +47,9 @@ export const products = [
   {
     _id: uuid(),
     name: "Mungyo Gallery Artist Soft Oil Pastel",
-    originalPrice: 935,
+    originalPrice: 3935,
     discount: 35,
-    discountedPrice: 900,
+    discountedPrice: 3900,
     description: "Features high-end oil pastels for professional artists",
     rating: 5,
     isBestseller: true,
@@ -61,9 +61,9 @@ export const products = [
   {
     _id: uuid(),
     name: "CAMEL OIL PASTELS",
-    originalPrice: 600,
+    originalPrice: 1600,
     discount: 100,
-    discountedPrice: 500,
+    discountedPrice: 1500,
     description:
       "Camel oil pastels are smoother to use and richer, deeper in colour.",
     rating: 4,
