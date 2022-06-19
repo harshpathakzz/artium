@@ -5,16 +5,6 @@
 
 /* Theme Colors  */
 :root {
-
-  --color-foreground: #111111;
-  --color-accents-one: #292929;
-  --color-accents-two: #464646;
-  --color-accents-three: #646464;
-  --color-accents-four: #818181;
-  --color-accents-five: #9e9e9e;
-  --color-accents-six: #dcdcdc;
-  --color-background: #fafafa;
-
   --rose-primary-700: #881337;
   --rose-primary-600: #9f1239;
   --rose-primary-500: #be123c;
@@ -30,13 +20,9 @@
   --rose-seconday-300: #f87171;
   --rose-seconday-200: #fca5a5;
   --rose-seconday-100: #fecaca;
-  
   --pink: #831843;
 
-
-  --footer-bg: #222222;
-
-
+  --box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   --12-px: 0.75rem;
   --14-px: 0.875rem;
   --16-px: 1rem;
@@ -62,10 +48,34 @@
   --extra-bold: 800;
   --black: 900;
 
-
-  --box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.light-theme{
+  --color-foreground: #111111;
+  --color-accents-one: #292929;
+  --color-accents-two: #464646;
+  --color-accents-three: #646464;
+  --color-accents-four: #818181;
+  --color-accents-five: #9e9e9e;
+  --color-accents-six: #dcdcdc;
+  --color-background: #fafafa;
+
+
+
+}
+
+.dark-theme{
+  --color-foreground: #fafafa;
+  --color-accents-one: #dcdcdc;
+  --color-accents-two: #9e9e9e;
+  --color-accents-three: #818181;
+  --color-accents-four: #646464;
+  --color-accents-five: #464646;
+  --color-accents-six: #292929;
+  --color-background: #111111;
+  --box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
 .logo {
   width: 7.5rem;
 }
@@ -92,7 +102,7 @@
 }
 
 
-.app {
+.App {
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: 'Lato', sans-serif;

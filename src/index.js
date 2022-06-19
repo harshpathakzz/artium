@@ -2,7 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import { AuthProvider, NavbarProvider } from "./frontend/contexts";
+import {
+  AuthProvider,
+  NavbarProvider,
+  ThemeProvider,
+} from "./frontend/contexts";
 import { makeServer } from "./server";
 import { ProductsProvider } from "./frontend/contexts/products-context";
 import { CartProvider } from "./frontend/contexts/cart-context";
@@ -20,7 +24,9 @@ ReactDOM.render(
             <WishlistProvider>
               <FiltersProvider>
                 <CartProvider>
-                  <App />
+                  <ThemeProvider>
+                    <App />
+                  </ThemeProvider>
                 </CartProvider>
               </FiltersProvider>
             </WishlistProvider>

@@ -1,4 +1,5 @@
 .cart-card-horizontal {
+  background-color: var(--color-accents-five);
   max-width: none;
   width: 40rem;
 }

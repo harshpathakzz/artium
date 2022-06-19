@@ -7,6 +7,7 @@ import { useCart } from "../../contexts/cart-context";
 import { useNavbar } from "../../contexts";
 import { useWishlist } from "../../contexts/wishlist-context";
 import "./Navbar.css";
+import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 
 function Navbar() {
   const { showNavbar, toggleNavbar } = useNavbar();
@@ -69,12 +70,8 @@ function Navbar() {
               </li>
             </ul>
           </section>
+          <ThemeToggle />
           <section className="navbar-actions">
-            <span className="navbar-action navbar-search">
-              <span className="material-icons navbar-icon navbar-search-icon">
-                search
-              </span>
-            </span>
             <span className="navbar-action">
               <NavLink to="/cart">
                 <span className="badge badge-icon">
@@ -102,26 +99,25 @@ function Navbar() {
               </NavLink>
             </span>
             <span className="navbar-action">
-              <span className="badge badge-icon">
-                <span className="material-icons navbar-icon">
-                  {" "}
-                  perm_identity
-                </span>
-                {auth.status ? (
-                  <span className="navbar-link" onClick={signOutHandler}>
-                    Sign Out
-                  </span>
-                ) : (
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive ? "navbar-link-active" : "navbar-link"
-                    }
-                    to="/signin"
-                  >
-                    Sign In
-                  </NavLink>
-                )}
-              </span>
+              <span className="material-icons navbar-icon">perm_identity</span>
+              <ul className="dropdown-content list-simple list-cursor-pointer list-style-none">
+                <li>
+                  {auth.status ? (
+                    <span className="navbar-link" onClick={signOutHandler}>
+                      Sign Out
+                    </span>
+                  ) : (
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive ? "navbar-link-active" : "navbar-link"
+                      }
+                      to="/signin"
+                    >
+                      Sign In
+                    </NavLink>
+                  )}
+                </li>
+              </ul>
             </span>
           </section>
         </nav>

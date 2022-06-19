@@ -5,6 +5,7 @@ import {
   moveProductToWishlistService,
   removeProductFromWishlistService,
 } from "../services";
+import { toast } from "react-toastify";
 
 const WishlistContext = createContext();
 
@@ -28,6 +29,8 @@ const WishlistProvider = ({ children }) => {
 
   const moveProductToWishlist = async (product) => {
     const newWishlist = await moveProductToWishlistService(auth.token, product);
+    toast.success("Successfully Moved to Wishlist");
+
     if (newWishlist !== undefined) {
       setWishlist(newWishlist);
     }
@@ -35,6 +38,7 @@ const WishlistProvider = ({ children }) => {
 
   const removeProductFromWishlist = async (id) => {
     const newWishlist = await removeProductFromWishlistService(auth.token, id);
+    toast.success("Successfully Removed from Wishlist");
     if (newWishlist !== undefined) {
       setWishlist(newWishlist);
     }

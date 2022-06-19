@@ -6,6 +6,7 @@
   background-color: #fefefe;
   border-radius: 5px;
   padding: 1rem;
+  background-color: var(--color-accents-five);
   box-shadow: #63636333 0px 1px 4px 0px;
   display: flex;
   flex-direction: column;

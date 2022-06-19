@@ -6,6 +6,7 @@ import {
   updateQuantityService,
 } from "../services";
 import { useAuth } from "./auth-context";
+import { toast } from "react-toastify";
 
 const CartContext = createContext();
 
@@ -44,6 +45,7 @@ const CartProvider = ({ children }) => {
 
   const addProductToCart = async (product) => {
     const newCart = await addProductToCartService(auth.token, product);
+    toast.success("Successfully Updated cart");
     if (newCart !== undefined) {
       setCart(newCart);
     }
@@ -51,6 +53,7 @@ const CartProvider = ({ children }) => {
 
   const removeProductFromCart = async (id) => {
     const newCart = await removeProductFromCartService(auth.token, id);
+    toast.success("Successfully Removed from cart");
     if (newCart !== undefined) {
       setCart(newCart);
     }
@@ -58,6 +61,7 @@ const CartProvider = ({ children }) => {
 
   const updateQuantityOfProductInCart = async (id, type) => {
     const newCart = await updateQuantityService(auth.token, id, type);
+    toast.success("Successfully Updated Quantity");
     if (newCart !== undefined) {
       setCart(newCart);
     }
