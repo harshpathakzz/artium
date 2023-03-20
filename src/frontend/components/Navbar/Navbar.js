@@ -41,8 +41,8 @@ function Navbar() {
             <NavLink to="/">
               <img
                 className="brand-logo"
-                src="/assets/Artium192.png"
-                alt="Artium"
+                src="/assets/shareplate.png"
+                alt="shareplate"
               />
             </NavLink>
           </section>
@@ -65,7 +65,7 @@ function Navbar() {
                   }
                   to="/products"
                 >
-                  Products
+                  Donate Food
                 </NavLink>
               </li>
             </ul>
@@ -86,7 +86,7 @@ function Navbar() {
                 </span>
               </NavLink>
             </span>
-            <span className="navbar-action">
+            {/* <span className="navbar-action">
               <NavLink to="/wishlist">
                 <span className="badge badge-icon">
                   <span className="material-icons navbar-icon">favorite</span>
@@ -97,7 +97,7 @@ function Navbar() {
                   )}
                 </span>
               </NavLink>
-            </span>
+            </span> */}
             <span className="navbar-action">
               <span className="material-icons navbar-icon">perm_identity</span>
               <ul className="dropdown-content list-simple list-cursor-pointer list-style-none">

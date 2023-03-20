@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero-info">
         <div className="hero-title">
           <h1 className="h1-60">
-            Shop with <span className="hl-rose">Artium</span>
+            Stop Wasting Food!<span className="hl-rose"> Just sharePlate</span>
           </h1>
           <h1 className="h1-60">
             Be your own <span className="hl-rose">Artist!</span>

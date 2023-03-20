@@ -13,7 +13,6 @@ const ProductCard = ({ product }) => {
     originalPrice,
     discount,
     discountedPrice,
-    rating,
     images,
     isBestseller,
     isTrending,
@@ -39,11 +38,13 @@ const ProductCard = ({ product }) => {
       <div className="card-primary">
         <h2 className="card-title">{name}</h2>
       </div>
-      <Rating rating={rating} />
+      {/* <Rating rating={rating} /> */}
       <div className="card-price">
-        <h4 className="card-price-discounted">₹{discountedPrice}</h4>
-        <small className="card-price-original">₹{originalPrice}</small>
-        <span className="card-discount">Rs {discount} Off</span>
+        <h4 className="card-price-discounted">
+          No. of serving : {discountedPrice}
+        </h4>
+        {/* <small className="card-price-original">₹{originalPrice}</small> */}
+        {/* <span className="card-discount">Rs {discount} Off</span> */}
       </div>
       <div className="card-actions">
         <div className="card-action-buttons">
@@ -62,7 +63,7 @@ const ProductCard = ({ product }) => {
                 auth.status ? addProductToCart(product) : navigate("/signin")
               }
             >
-              Add To Cart
+              Message
             </button>
           )}
         </div>
@@ -90,10 +91,8 @@ const ProductCard = ({ product }) => {
           )}
         </div>
       </div>
-      {isBestseller && (
-        <div className="card-badge bestseller hl">Bestseller</div>
-      )}
-      {isTrending && <div className="card-badge trending hl">Trending</div>}
+      {isBestseller && <div className="card-badge bestseller hl">non-veg</div>}
+      {isTrending && <div className="card-badge trending hl">veg</div>}
     </div>
   );
 };
